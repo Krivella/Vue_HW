@@ -1,0 +1,43 @@
+.grid{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid img{
+	width: 100%;
+	height: auto;
+}
+.grid p{
+	display: none;
+}
+
+.leftButton{
+	margin-left: 40%;
+	margin-right: auto;
+}
+
+.flex{
+	display: flex;
+	flex-direction: column;
+}
+
+.flex img{
+	margin-top: 20px;
+	position: relative;
+    padding: 0;
+    width:64px;
+    height:64px;
+    border: 1px solid #000;
+    border-radius:30px;
+}
+
+.flex p{
+	position: absolute;
+	padding-left: 100px;
+	margin-top: -40px;
+	text-transform: uppercase;
+	
+
+
+}

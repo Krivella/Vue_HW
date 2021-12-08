@@ -5,3 +5,15 @@
 .price{
 	margin-left: 10px;
 }
+
+.zero{
+	background-color: orange;
+}
+
+.not-many{
+	background-color: greenyellow;
+}
+
+.many{
+	background-color: seagreen;
+}

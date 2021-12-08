@@ -33,6 +33,7 @@
              }
           ] 
         }
+
     },
  computed:{  
  sortedByCount(){
@@ -42,3 +43,4 @@
 })
 
  application.mount('#application');
+

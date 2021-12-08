@@ -9,8 +9,10 @@
 </head>
 <body>
 <section id="application">
-	<div v-for = "good in goods">
-		<div class="goods" v-for = "good in sortedByCount">
+	<div>
+		<div class="goods" 
+		v-for = "good in sortedByCount" 
+		:class="{zero: good.count === 0, 'not-many': good.count>1 && good.count<20, many: good.count >20}">
 		<p>{{good.title}}</p>
 		<p class="price">{{good.price}}</p>	
 		</div>
