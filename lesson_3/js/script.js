@@ -26,10 +26,23 @@ let application=Vue.createApp({
          title: "В России появится новый вид бумаги",
          image: "https://picsum.photos/id/30/1000/1000"
       }
-   ]
+   ],
+  
+   sercher: " "
    
 }
-}
+},
+computed: {
+        serching() {
+            return this.articles.filter(article => {
+                return article.title.toLowerCase().includes(this.sercher.toLowerCase())
+            })
+        }
+    }
+
+
+
+ 
 })
 
 application.mount('#application');

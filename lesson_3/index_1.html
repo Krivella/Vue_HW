@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Salon_krasoti</title>
+	<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+
+	<section id="application">
+         <div v-for="service in cost">
+            <input type="checkbox" :id="index"  v-model="checkedServices">
+            <label :for="index">{{service.title}} {{service.price}}</label>
+         </div>
+         <p>Итого:{{getSumm}}</p>
+      </section>
+
+<script src="js/script_1.js"></script>
+</body>
+</html>
