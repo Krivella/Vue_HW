@@ -9,8 +9,8 @@
 <body>
 
 	<section id="application">
-         <div v-for="service in cost">
-            <input type="checkbox" :id="index"  v-model="checkedServices">
+         <div v-for="(service, index) in cost">
+            <input type="checkbox" :id="index" :value="index" v-model="checkedServices">
             <label :for="index">{{service.title}} {{service.price}}</label>
          </div>
          <p>Итого:{{getSumm}}</p>
